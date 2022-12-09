@@ -90,3 +90,4 @@ fabric.properties
 
 # Environment files
 .env
+.idea
