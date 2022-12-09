@@ -21,7 +21,10 @@ func AuthorizationCheck(nextHandler http.Handler) http.Handler {
 				},
 			)
 			logger.Debug("Checking the incoming request for authorization information set by the gateway")
-
+			if request.URL.Path == "/ping" {
+				nextHandler.ServeHTTP(responseWriter, request)
+				return
+			}
 			// Get the scopes the requesting user has
 			scopes := request.Header.Get("X-Authenticated-Scope")
 			// Check if the string is empty
