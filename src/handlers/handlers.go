@@ -56,15 +56,15 @@ func PingHandler(w http.ResponseWriter, _ *http.Request) {
 }
 
 /*
-BasicHandler
+RequestHandler
 
 This handler shows how a basic handler works and how to send back a message
 */
-func BasicHandler(responseWriter http.ResponseWriter, request *http.Request) {
+func RequestHandler(responseWriter http.ResponseWriter, request *http.Request) {
 	logger := log.WithFields(
 		log.Fields{
 			"middleware": true,
-			"title":      "BasicHandler",
+			"title":      "RequestHandler",
 		},
 	)
 	logger.WithField("request", request).Info("Got new request")
