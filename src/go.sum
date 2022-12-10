@@ -12,8 +12,8 @@ github.com/sirupsen/logrus v1.9.0/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVs
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/wisdom-oss/golang-kong-access v1.0.0 h1:OMCFF+mzPzFshAWxrG57qeLhsbkSqxZAzp3KsbN/xQ8=
-github.com/wisdom-oss/golang-kong-access v1.0.0/go.mod h1:PSNPrnNx/p2cFX0B0GWJjLtDXkBAj/XiO5dsMUGGrhg=
+github.com/wisdom-oss/golang-kong-access v0.2.0 h1:2K1mwUVK/kAtChmqfh574vwqy6foYc1f7z0A7XYy0zY=
+github.com/wisdom-oss/golang-kong-access v0.2.0/go.mod h1:PSNPrnNx/p2cFX0B0GWJjLtDXkBAj/XiO5dsMUGGrhg=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20221006211917-84dc82d7e875 h1:AzgQNqF+FKwyQ5LbVrVqOcuuFB67N47F9+htZYH0wFM=
 golang.org/x/sys v0.0.0-20221006211917-84dc82d7e875/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
