@@ -1,0 +1,6 @@
+{
+  "$schema": "https://raw.githubusercontent.com/wisdom-oss/documentation/main/schemas/service-scope.schema.json",
+  "name": "BIM Model Data",
+  "description": "This scope allows access to the information stored in the uploaded ifc files",
+  "scopeStringValue": "bim-data"
+}
