@@ -67,9 +67,13 @@ func RequestHandler(responseWriter http.ResponseWriter, request *http.Request) {
 			"title":      "RequestHandler",
 		},
 	)
-	logger.WithField("request", request).Info("Got new request")
-	_, err := responseWriter.Write([]byte("Hello World"))
-	if err != nil {
-		log.WithError(err).Error("Unable to send response to the client")
+	// Check if the request contains a modelID and instanceID
+	modelIDSet := request.URL.Query().Has("modelID")
+	instanceIDSet := request.URL.Query().Has("instanceID")
+
+	if !modelIDSet || !instanceIDSet {
+		logger.Warning("incoming request did not contain the needed query parameters")
+		helpers.SendRequestError(e.MissingQueryParameter, responseWriter)
+		return
 	}
 }
