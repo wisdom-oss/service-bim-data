@@ -22,26 +22,26 @@ import (
 
 // RequiredSettings associates the name of an environment variable with a pointer to the storage location of the value
 var RequiredSettings = map[string]*string{
-	"CONFIG_API_GATEWAY_HOST":         &vars.APIGatewayHost,
-	"CONFIG_POSTGRES_HOST":            &vars.DatabaseHost,
-	"CONFIG_POSTGRES_USER":            &vars.DatabaseUser,
-	"CONFIG_POSTGRES_PASSWORD":        &vars.DatabaseUserPassword,
-	"CONFIG_API_GATEWAY_SERVICE_PATH": &vars.ServiceRoutePath,
+	"API_GATEWAY_HOST": &vars.APIGatewayHost,
+	"PG_HOST":          &vars.DatabaseHost,
+	"PG_USER":          &vars.DatabaseUser,
+	"PG_PASS":          &vars.DatabaseUserPassword,
+	"SERVICE_PATH":     &vars.ServiceRoutePath,
 	// TODO: Add own required settings
 }
 
 // OptionalIntSettings associates the name of an environment variable with a pointer to the storage location of the
 // value. If the value is not found a default value will be loaded
 var OptionalIntSettings = map[string]*int{
-	"CONFIG_HTTP_LISTEN_PORT":       &vars.ListenPort,
-	"CONFIG_POSTGRES_PORT":          &vars.DatabasePort,
-	"CONFIG_API_GATEWAY_ADMIN_PORT": &vars.APIGatewayPort,
+	"LISTEN_PORT":      &vars.ListenPort,
+	"PG_PORT":          &vars.DatabasePort,
+	"API_GATEWAY_PORT": &vars.APIGatewayPort,
 }
 
 // OptionalStringSettings associates the name of an environment variable with a pointer to the storage location of the
 // value. If the value is not found a default value will be loaded
 var OptionalStringSettings = map[string]*string{
-	"CONFIG_SCOPE_FILE_PATH": &vars.ScopeConfigurationPath,
+	"SCOPE_FILE_LOCATION": &vars.ScopeConfigurationPath,
 }
 
 /*
